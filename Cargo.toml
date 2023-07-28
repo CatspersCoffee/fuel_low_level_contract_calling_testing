@@ -1,0 +1,24 @@
+[package]
+name = "llcall_testing"
+description = "A cargo-generate template for Rust + Sway integration testing."
+version = "0.1.0"
+edition = "2021"
+authors = ["0xbadc0de <badc0de57721@gmail.com>"]
+license = "Apache-2.0"
+
+[dependencies]
+fuels = { version = "0.44", features = ["fuel-core-lib"] }
+tokio = { version = "1.12", features = ["rt", "macros"] }
+dotenv = "0.15.0"
+rand = "0.8.5"
+reqwest = "0.11.13"
+serde_json = "1.0.91"
+hex = "0.4.3"
+fuel-crypto = "0.34.1"
+fuel-core = { version = "0.19.1", default-features = false }
+
+
+[[test]]
+harness = true
+name = "integration_tests"
+path = "tests/harness.rs"
