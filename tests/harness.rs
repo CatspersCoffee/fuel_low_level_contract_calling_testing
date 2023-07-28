@@ -25,14 +25,14 @@ abigen!(Contract(
     ),
     Contract(
         name = "TargetContract",
-        abi = "./contracts/target/out/debug/target-abi.json"
+        abi = "./contracts/targetcontract/out/debug/target-abi.json"
     )
 );
 
 pub const CALLER_CONTRACT_BINARY_PATH: &str =
     "./contracts/caller/out/debug/caller.bin";
 pub const TARGET_CONTRACT_BINARY_PATH: &str =
-    "./contracts/target/out/debug/target.bin";
+    "./contracts/targetcontract/out/debug/target.bin";
 
 pub const WALLET_FROM_FUEL_CORE: &str =
     "de97d8624a438121b86a1956544bd72ed68cd69f2c99555b08b1e8c51ffd511c";
